@@ -1,0 +1,26 @@
+# Portfolio of Stocks
+# Two file apps: ui.R
+
+if (!require("shiny")) install.packages('shiny')
+
+options(shiny.error=browser)
+
+shinyUI(
+  fluidPage(
+    titlePanel(textOutput("fse")),
+    DT::dataTableOutput("x3"),
+    actionButton(inputId="go",label="Run"),
+    verbatimTextOutput("x4")
+  )
+)
+
+#    navbarMenu(
+#      "Analysis",
+#      tabPanel("Variance-Covariance"),
+#      tabPanel("Historical Simulation"),
+#      tabPanel("Monte Carlo simulation"),  # conditional on df
+#      tabPanel("Monte Carlo simulation (based on t)")
+#    ),
+#    navbarMenu("Help",
+#               tabPanel("About"))
+#  )

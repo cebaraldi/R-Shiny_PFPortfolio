@@ -1,0 +1,33 @@
+#library(shiny)
+#setwd("/home/ceb/R/Portfolio of Stocks")
+library(shinydashboard)
+library(Quandl)
+source(file.path("..", "Quandl.auth.R"))
+fsecol <- "Close"
+
+if(!exists("BMW"))BMW = Quandl("FSE/BMW_X",type="zoo")[,fsecol]
+if(!exists("SIEMENS"))SIEMENS = Quandl("FSE/SIE_X",type="zoo")[,fsecol]
+DF <-  data.frame(index=c("ADS","BMW","CBK","SIE"),units=c(0,0,0,1))
+# stock index e.g. "FSE/BMW_X"
+
+
+
+
+#  navbarPage("Portfolio of Stocks",
+#             tabPanel("File"),
+#             tabPanel("Edit"),
+#             tabPanel("View"),
+#             #Set stock prices and number of units
+#             tabPanel("Composition"),
+#             
+#    navbarMenu("Analysis",
+#      tabPanel("Variance-Covariance"),
+#      tabPanel("Historical Simulation"),
+#      tabPanel("Monte Carlo simulation"),  # conditional on df
+#      tabPanel("Monte Carlo simulation (based on t)")
+#    ),
+#    navbarMenu("Help",
+#               tabPanel("About")
+#    )
+#    )
+

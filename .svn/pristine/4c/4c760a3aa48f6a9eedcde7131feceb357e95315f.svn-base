@@ -1,0 +1,161 @@
+"","Units","Price","Code","Name","Frequency","From","To","ID"
+"1",0,0,"2HR_X","H&r Ag (2HR_X)","daily","2000-01-03","2015-08-13",10095416
+"2",0,0,"AAD_X","Amadeus Fire Ag (AAD_X)","daily","2000-02-01","2015-08-13",10095396
+"3",0,0,"AB1_X","Air Berlin Plc (AB1_X)","daily","2006-05-17","2015-08-13",10095395
+"4",0,0,"ADS_X","Adidas Ag (ADS_X)","daily","2000-01-03","2015-08-13",10095250
+"5",0,0,"ADV_X","Adva Optical Networking Se (ADV_X)","daily","2000-03-28","2015-08-13",10095365
+"6",0,0,"AFX_X","Carl Zeiss Meditec Ag (AFX_X)","daily","2000-06-07","2015-08-13",10095370
+"7",0,0,"AIR_X","Airbus Group (eads N.v.) (AIR_X)","daily","2000-07-10","2015-08-13",10095316
+"8",0,0,"AIXA_X","Aixtron Se (AIXA_X)","daily","2000-01-18","2015-08-13",10095366
+"9",0,0,"ALV_X","Allianz Se (ALV_X)","daily","2000-01-18","2015-08-13",10095251
+"10",0,0,"ANN_X","Deutsche Annington Immobilien Se (ANN_X)","daily","2013-07-15","2015-08-13",10095409
+"11",0,0,"AOX_X","Alstria Office Reit-ag (AOX_X)","daily","2014-02-26","2015-08-13",10095443
+"12",0,0,"ARL_X","Aareal Bank Ag (ARL_X)","daily","2002-09-25","2015-08-13",10095315
+"13",0,0,"B5A_X","Bauer Aktiengesellschaft (B5A_X)","daily","2006-10-04","2015-08-13",10095398
+"14",0,0,"BAF_X","Balda Ag (BAF_X)","daily","2000-01-18","2015-08-13",10095397
+"15",0,0,"BAS_X","Basf Se (BAS_X)","daily","2000-01-18","2015-08-13",10095252
+"16",0,0,"BAYN_X","Bayer Ag (BAYN_X)","daily","2000-01-18","2015-08-13",10095254
+"17",0,0,"BBZA_X","Bb Biotech Ag (BBZA_X)","daily","2000-01-20","2015-08-13",10095367
+"18",0,0,"BC8_X","Bechtle Ag (BC8_X)","daily","2000-06-06","2015-08-13",10095368
+"19",0,0,"BDT_X","Bertrandt Ag (BDT_X)","daily","2000-01-03","2015-08-13",10095400
+"20",0,0,"BEI_X","Beiersdorf Aktiengesellschaft (BEI_X)","daily","2000-01-18","2015-08-13",10095255
+"21",0,0,"BIO3_X","Biotest Ag Vz (BIO3_X)","daily","2000-01-14","2015-08-13",10095401
+"22",0,0,"BMW_X","Bmw Ag St (BMW_X)","daily","2000-01-18","2015-08-13",10095253
+"23",0,0,"BNR_X","Brenntag Ag (BNR_X)","daily","2010-03-29","2015-08-13",10095320
+"24",0,0,"BOSS_X","Hugo Boss Ag (BOSS_X)","daily","2000-01-03","2015-08-13",10095337
+"25",0,0,"BYW6_X","Baywa Ag Vna (BYW6_X)","daily","2000-11-06","2015-08-13",10095399
+"26",0,0,"CBK_X","Commerzbank Ag (CBK_X)","daily","2000-01-18","2015-08-13",10095256
+"27",0,0,"CEV_X","Centrotec Sustainable Ag (CEV_X)","daily","2000-01-14","2015-08-13",10095405
+"28",0,0,"CLS1_X","Celesio Ag (CLS1_X)","daily","2000-01-18","2015-08-13",10095321
+"29",0,0,"COK_X","Cancom Se (COK_X)","daily","2000-03-20","2015-08-13",10095369
+"30",0,0,"COM_X","Comdirect Bank Ag (COM_X)","daily","2000-06-06","2015-08-13",10095406
+"31",0,0,"CON_X","Continental Ag (CON_X)","daily","2000-01-18","2015-08-13",10095257
+"32",0,0,"COP_X","Compugroup Medical Ag (COP_X)","daily","2000-01-03","2015-08-13",10095371
+"33",0,0,"CWC_X","Cewe Stiftung & Co. Kgaa (CWC_X)","daily","2013-12-13","2015-08-13",10095403
+"34",0,0,"DAI_X","Daimler Ag (DAI_X)","daily","2000-01-20","2015-08-13",10095258
+"35",0,0,"DB1_X","Deutsche BÃ¶rse Ag (DB1_X)","daily","2001-02-05","2015-08-13",10095260
+"36",0,0,"DBAN_X","Deutsche Beteiligungs Ag (DBAN_X)","daily","2000-01-10","2015-08-13",10095410
+"37",0,0,"DBK_X","Deutsche Bank Ag (DBK_X)","daily","2000-01-18","2015-08-13",10095259
+"38",0,0,"DEQ_X","Deutsche Euroshop Ag (DEQ_X)","daily","2001-01-02","2015-08-13",10095323
+"39",0,0,"DEX_X","Delticom Ag (DEX_X)","daily","2006-10-26","2015-08-13",10095408
+"40",0,0,"DEZ_X","Deutz Ag (DEZ_X)","daily","2000-01-03","2015-08-13",10095411
+"41",0,0,"DIC_X","Dic Asset Ag (DIC_X)","daily","2005-12-26","2015-08-13",10095407
+"42",0,0,"DLG_X","Dialog Semiconductor Plc (DLG_X)","daily","2000-01-17","2015-08-13",10095372
+"43",0,0,"DPW_X","Deutsche Post Ag (DPW_X)","daily","2000-11-20","2015-08-13",10095261
+"44",0,0,"DRI_X","Drillisch Ag (DRI_X)","daily","2000-01-18","2015-08-13",10095373
+"45",0,0,"DRW3_X","DrÃ¤gerwerk Ag & Co. Kgaa Vz (DRW3_X)","daily","2000-03-20","2015-08-13",10095374
+"46",0,0,"DTE_X","Deutsche Telekom Ag (DTE_X)","daily","2000-01-18","2015-08-13",10095262
+"47",0,0,"DUE_X","DÃ¼rr Ag (DUE_X)","daily","2000-01-06","2015-08-13",10095325
+"48",0,0,"DWNI_X","Deutsche Wohnen Ag (DWNI_X)","daily","2006-07-26","2015-08-13",10095324
+"49",0,0,"EOAN_X","E.on Se (EOAN_X)","daily","2000-01-18","2015-08-13",10095263
+"50",0,0,"EVD_X","Cts Eventim Ag (EVD_X)","daily","2000-02-02","2015-08-13",10095404
+"51",0,0,"EVK_X","Evonik Industries Ag (EVK_X)","daily","2013-05-06","2015-08-13",10095327
+"52",0,0,"EVT_X","Evotec Ag (EVT_X)","daily","2000-03-28","2015-08-13",10095375
+"53",0,0,"FIE_X","Fielmann Ag (FIE_X)","daily","2000-10-25","2015-08-13",10095328
+"54",0,0,"FME_X","Fresenius Medical Care Ag & Co. Kgaa St (FME_X)","daily","2000-01-18","2015-08-13",10095265
+"55",0,0,"FNTN_X","Freenet Ag (FNTN_X)","daily","2000-01-18","2015-08-13",10095376
+"56",0,0,"FPE3_X","Fuchs Petrolub Ag Vz (FPE3_X)","daily","2000-01-10","2015-08-13",10095330
+"57",0,0,"FRA_X","Fraport Ag (FRA_X)","daily","2001-06-11","2015-08-13",10095329
+"58",0,0,"FRE_X","Fresenius Se & Co. Kgaa (FRE_X)","daily","2000-01-14","2015-08-13",10095264
+"59",0,0,"G1A_X","Gea Group Aktiengesellschaft (G1A_X)","daily","2000-01-18","2015-08-13",10095331
+"60",0,0,"GBF_X","Bilfinger Se (GBF_X)","daily","2000-01-18","2015-08-13",10095319
+"61",0,0,"GFJ_X","Gagfah S.a. (GFJ_X)","daily","2006-10-19","2015-08-13",10095332
+"62",0,0,"GFK_X","Gfk Se (GFK_X)","daily","2000-01-18","2015-08-13",10095412
+"63",0,0,"GIL_X","Dmg Mori Seiki Ag (GIL_X)","daily","2000-01-17","2015-08-13",10095322
+"64",0,0,"GLJ_X","Grenkeleasing Ag (GLJ_X)","daily","2000-04-04","2015-08-13",10095415
+"65",0,0,"GMM_X","Grammer Ag (GMM_X)","daily","2000-01-06","2015-08-13",10095414
+"66",0,0,"GSC1_X","Gesco Ag (GSC1_X)","daily","2000-01-10","2015-08-13",10095413
+"67",0,0,"GWI1_X","Gerry Weber International Ag (GWI1_X)","daily","2000-10-24","2015-08-13",10095334
+"68",0,0,"GXI_X","Gerresheimer Ag (GXI_X)","daily","2007-07-11","2015-08-13",10095333
+"69",0,0,"HAB_X","Hamborner Reit Ag (HAB_X)","daily","2014-02-26","2015-08-13",10095418
+"70",0,0,"HAW_X","Hawesko Holding Ag (HAW_X)","daily","2000-01-03","2015-08-13",10095419
+"71",0,0,"HBH3_X","Hornbach Holding Ag (HBH3_X)","daily","2000-01-03","2015-08-13",10095421
+"72",0,0,"HDD_X","Heidelberger Druckmaschinen Ag (HDD_X)","daily","2000-01-18","2015-08-13",10095420
+"73",0,0,"HEI_X","Heidelbergcement Ag (HEI_X)","daily","2000-01-18","2015-08-13",10095266
+"74",0,0,"HEN3_X","Henkel Ag & Co. Kgaa Vz (HEN3_X)","daily","2000-01-18","2015-08-13",10095267
+"75",0,0,"HHFA_X","Hamburger Hafen Und Logistik Ag (HHFA_X)","daily","2007-11-28","2015-08-13",10095417
+"76",0,0,"HNR1_X","Hannover RÃ¼ck Se (HNR1_X)","daily","2000-10-25","2015-08-13",10095335
+"77",0,0,"HOT_X","Hochtief Ag (HOT_X)","daily","2000-01-18","2015-08-13",10095336
+"78",0,0,"IFX_X","Infineon Technologies Ag (IFX_X)","daily","2000-03-28","2015-08-13",10095268
+"79",0,0,"INH_X","Indus Holding Ag (INH_X)","daily","2000-01-11","2015-08-13",10095422
+"80",0,0,"JEN_X","Jenoptik Ag (JEN_X)","daily","2000-01-18","2015-08-13",10095377
+"81",0,0,"JUN3_X","Jungheinrich Ag (JUN3_X)","daily","2000-01-18","2015-08-13",10095423
+"82",0,0,"KBC_X","Kontron Ag (KBC_X)","daily","2000-04-06","2015-08-13",10095378
+"83",0,0,"KCO_X","KlÃ¶ckner & Co Se (KCO_X)","daily","2006-07-26","2015-08-13",10095339
+"84",0,0,"KD8_X","Kabel Deutschland Holding Ag (KD8_X)","daily","2010-03-22","2015-08-13",10095338
+"85",0,0,"KGX_X","Kion Group Ag (KGX_X)","daily","2013-07-15","2015-08-13",10095425
+"86",0,0,"KRN_X","Krones Ag (KRN_X)","daily","2000-01-03","2015-08-13",10095340
+"87",0,0,"KU2_X","Kuka Aktiengesellschaft (KU2_X)","daily","2000-01-18","2015-08-13",10095341
+"88",0,0,"KWS_X","Kws Saat Ag (KWS_X)","daily","2013-12-13","2015-08-13",10095424
+"89",0,0,"LEG_X","Leg Immobilien Ag (LEG_X)","daily","2013-02-20","2015-08-13",10095342
+"90",0,0,"LEO_X","Leoni Ag (LEO_X)","daily","2001-09-17","2015-08-13",10095343
+"91",0,0,"LHA_X","Deutsche Lufthansa Ag (LHA_X)","daily","2000-01-19","2015-08-13",10095272
+"92",0,0,"LIN_X","Linde Ag (LIN_X)","daily","2000-01-19","2015-08-13",10095271
+"93",0,0,"LPK_X","Lpkf Laser & Electronics Ag (LPK_X)","daily","2000-01-03","2015-08-13",10095379
+"94",0,0,"LXS_X","Lanxess Ag (LXS_X)","daily","2005-01-31","2015-08-13",10095270
+"95",0,0,"MAN_X","Man Se St (MAN_X)","daily","2000-01-18","2015-08-13",10095344
+"96",0,0,"MEO_X","Metro Ag St (MEO_X)","daily","2000-01-18","2015-08-13",10095346
+"97",0,0,"MLP_X","Mlp Ag (MLP_X)","daily","2000-01-18","2015-08-13",10095427
+"98",0,0,"MOR_X","Morphosys Ag (MOR_X)","daily","2000-01-18","2015-08-13",10095380
+"99",0,0,"MRK_X","Merck Kgaa (MRK_X)","daily","2000-01-18","2015-08-13",10095273
+"100",0,0,"MTX_X","Mtu Aero Engines Ag (MTX_X)","daily","2005-06-06","2015-08-13",10095345
+"101",0,0,"MUV2_X","MÃ¼nchener RÃ¼ck Ag (MUV2_X)","daily","2000-01-18","2015-08-13",10095274
+"102",0,0,"NDA_X","Aurubis Ag (NDA_X)","daily","2000-01-18","2015-08-13",10095317
+"103",0,0,"NDX1_X","Nordex Se (NDX1_X)","daily","2001-04-02","2015-08-13",10095382
+"104",0,0,"NEM_X","Nemetschek Ag (NEM_X)","daily","2005-12-27","2015-08-13",10095381
+"105",0,0,"NOEJ_X","Norma Group Se (NOEJ_X)","daily","2011-04-08","2015-08-13",10095347
+"106",0,0,"O1BC_X","Xing Ag (O1BC_X)","daily","2006-12-11","2015-08-13",10095394
+"107",0,0,"O2C_X","C.a.t. Oil Ag (O2C_X)","daily","2006-05-17","2015-08-13",10095402
+"108",0,0,"O2D_X","TelefÃ³nica Deutschland Holding Ag (O2D_X)",NA,NA,NA,13961106
+"109",0,0,"OSR_X","Osram Licht Ag (OSR_X)","daily","2013-07-15","2015-08-13",10095348
+"110",0,0,"P1Z_X","Patrizia Immobilien Ag (P1Z_X)","daily","2006-03-31","2015-08-13",10095428
+"111",0,0,"PFV_X","Pfeiffer Vacuum Technology Ag (PFV_X)","daily","2000-01-18","2015-08-13",10095384
+"112",0,0,"PMOX_X","Prime Office Ag (PMOX_X)","daily","2011-07-28","2015-08-13",10095429
+"113",0,0,"PSAN_X","Psi Aktiengesellschaft (PSAN_X)","daily","2000-03-23","2015-08-13",10095383
+"114",0,0,"PSM_X","Prosiebensat.1 Media Ag (PSM_X)","daily","2000-10-13","2015-08-13",10095349
+"115",0,0,"PUM_X","Puma Se (PUM_X)","daily","2000-01-19","2015-08-13",10095430
+"116",0,0,"QIA_X","Qiagen N.v. (QIA_X)","daily","2000-01-03","2015-08-13",10095386
+"117",0,0,"QSC_X","Qsc Ag (QSC_X)","daily","2000-04-19","2015-08-13",10095385
+"118",0,0,"RAA_X","Rational Ag (RAA_X)","daily","2000-06-02","2015-08-13",10095351
+"119",0,0,"RHK_X","RhÃn-klinikum Ag (RHK_X)","daily","2000-01-18","2015-08-13",10095353
+"120",0,0,"RHM_X","Rheinmetall Ag (RHM_X)","daily","2000-01-14","2015-08-13",10095352
+"121",0,0,"RRTL_X","Rtl Group S.a. (RRTL_X)","daily","2000-08-09","2015-08-13",10095350
+"122",0,0,"RWE_X","Rwe Ag St (RWE_X)","daily","2000-01-19","2015-08-13",10095275
+"123",0,0,"S92_X","Sma Solar Technology Ag (S92_X)","daily","2008-06-27","2015-08-13",10095387
+"124",0,0,"SAP_X","Sap Ag (SAP_X)","daily","2000-01-18","2015-08-13",10095276
+"125",0,0,"SAX_X","StrÃ¶er Media Ag (SAX_X)","daily","2010-08-06","2015-08-13",10095435
+"126",0,0,"SAZ_X","Stada Arzneimittel Ag (SAZ_X)","daily","2000-01-18","2015-08-13",10095355
+"127",0,0,"SBS_X","Stratec Biomedical Ag (SBS_X)","daily","2000-06-27","2015-08-13",10095388
+"128",0,0,"SDF_X","K+s Aktiengesellschaft (SDF_X)","daily","2000-01-18","2015-08-13",10095269
+"129",0,0,"SFQ_X","Saf-holland S.a. (SFQ_X)","daily","2007-07-26","2015-08-13",10095431
+"130",0,0,"SGL_X","Sgl Carbon Se (SGL_X)","daily","2000-01-18","2015-08-13",10095354
+"131",0,0,"SIE_X","Siemens Ag (SIE_X)","daily","2000-01-18","2015-08-13",10095277
+"132",0,0,"SIX2_X","Sixt Se St (SIX2_X)","daily","2000-01-18","2015-08-13",10095434
+"133",0,0,"SKB_X","Koenig & Bauer Ag (SKB_X)","daily","2000-01-03","2015-08-13",10095426
+"134",0,0,"SKYD_X","Sky Deutschland Ag (SKYD_X)","daily","2005-03-23","2015-08-13",10095357
+"135",0,0,"SLT_X","Schaltbau Holding Ag (SLT_X)","daily","2000-01-03","2015-08-13",10095433
+"136",0,0,"SOW_X","Software Ag (SOW_X)","daily","2000-01-19","2015-08-13",10095390
+"137",0,0,"SPR_X","Axel Springer Se (SPR_X)","daily","2000-11-06","2015-08-13",10095318
+"138",0,0,"SRT3_X","Sartorius Ag Vz (SRT3_X)","daily","2000-03-17","2015-08-13",10095389
+"139",0,0,"SW1_X","Shw Ag (SW1_X)","daily","2011-07-25","2015-08-13",10095432
+"140",0,0,"SY1_X","Symrise Ag (SY1_X)","daily","2006-12-13","2015-08-13",10095358
+"141",0,0,"SZG_X","Salzgitter Ag (SZG_X)","daily","2000-01-17","2015-08-13",10095356
+"142",0,0,"SZU_X","SÃ¼dzucker Ag (SZU_X)","daily","2000-01-18","2015-08-13",10095359
+"143",0,0,"TEG_X","Tag Immobilien Ag (TEG_X)","daily","2000-10-06","2015-08-13",10095360
+"144",0,0,"TIM_X","Tipp24 Se (TIM_X)","daily","2005-10-12","2015-08-13",10095438
+"145",0,0,"TKA_X","Thyssenkrupp Ag (TKA_X)","daily","2000-01-18","2015-08-13",10095278
+"146",0,0,"TLX_X","Talanx Aktiengesellschaft (TLX_X)","daily","2012-10-02","2015-08-13",10095362
+"147",0,0,"TTI_X","Tom Tailor Holding Ag (TTI_X)","daily","2010-03-26","2015-08-13",10095436
+"148",0,0,"TTK_X","Takkt Ag (TTK_X)","daily","2000-01-18","2015-08-13",10095437
+"149",0,0,"TUI1_X","Tui Ag (TUI1_X)","daily","2000-01-18","2015-08-13",10095361
+"150",0,0,"UTDI_X","United Internet Ag (UTDI_X)","daily","2000-08-28","2015-08-13",10095392
+"151",0,0,"VIB3_X","Villeroy & Boch Ag Vz (VIB3_X)","daily","2000-05-19","2015-08-13",10095440
+"152",0,0,"VOS_X","Vossloh Ag (VOS_X)","daily","2000-03-28","2015-08-13",10095441
+"153",0,0,"VOW3_X","Volkswagen Ag Vz (VOW3_X)","daily","2000-01-18","2015-08-13",10095279
+"154",0,0,"VT9_X","Vtg Aktiengesellschaft (VT9_X)","daily","2007-07-10","2015-08-13",10095439
+"155",0,0,"WAC_X","Wacker Neuson Se (WAC_X)","daily","2007-05-15","2015-08-13",10095442
+"156",0,0,"WCH_X","Wacker Chemie Ag (WCH_X)","daily","2006-04-10","2015-08-13",10095363
+"157",0,0,"WDI_X","Wirecard Ag (WDI_X)","daily","2001-08-22","2015-08-13",10095393
+"158",0,0,"WIN_X","Wincor Nixdorf Aktiengesellschaft (WIN_X)","daily","2004-06-16","2015-08-13",10095364
+"159",0,0,"ZIL2_X","Elringklinger Ag (ZIL2_X)","daily","2001-09-24","2015-08-13",10095326
+"160",0,0,"ZO1_X","Zooplus Ag (ZO1_X)","daily","2008-06-12","2015-08-13",10095444

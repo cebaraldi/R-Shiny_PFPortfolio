@@ -1,0 +1,62 @@
+# Two file apps: ui.R
+
+if (!require("shiny"))
+  install.packages('shiny')
+
+shinyUI(
+  navbarPage(
+    textOutput("fse"),
+    
+    tabPanel(
+      "Available Data",
+      DT::dataTableOutput("table"),
+      downloadButton('downloadData', 'Download')
+    ),
+    tabPanel(
+      "Portfolio Upload",
+      fileInput(
+        'file1', 'Choose CSV File',
+        accept = c('text/csv',
+                   'text/comma-separated-values,text/plain',
+                   '.csv')
+      ),
+      tags$hr(),
+      dateRangeInput("dates", start = Sys.Date() -
+                       500,label = "Select date range"),
+      checkboxInput('header', 'Header', TRUE),
+      radioButtons('sep', 'Separator',
+                   c(
+                     Comma = ',',
+                     Semicolon = ';',
+                     Tab = '\t'
+                   ),
+                   ','),
+      radioButtons(
+        'quote', 'Quote',
+        c(
+          None = '',
+          'Double Quote' = '"',
+          'Single Quote' = "'"
+        ),
+        '"'
+      )
+    ),
+    tabPanel(
+      "Display Portfolio",
+      tableOutput('contents'),
+      actionButton("getData","Get Stocks")
+    ),
+    conditionalPanel(
+      condition = "1 == 0",
+      navbarMenu(
+        "Analysis",
+        tabPanel("Variance-Covariance",
+                 verbatimTextOutput('varcovar')),
+        tabPanel("Historical Simulation"),
+        tabPanel("Monte Carlo (MC) simulation"),  # conditional on df
+        tabPanel("MC simulation (based on t)")
+      )
+    ),
+    tabPanel("About")
+  )
+)

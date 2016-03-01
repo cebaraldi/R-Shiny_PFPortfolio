@@ -1,0 +1,8 @@
+Units,Price,Code,Name,Frequency,From,To,ID
+0,0,AB1_X,Air Berlin Plc (AB1_X),daily,2006-05-17,2015-08-13,10095395
+0,0,ADS_X,Adidas Ag (ADS_X),daily,2000-01-03,2015-08-13,10095250
+5,85.86,BMW_X,Bmw Ag St (BMW_X),daily,2000-01-18,2015-08-13,10095253
+0,0,BOSS_X,Hugo Boss Ag (BOSS_X),daily,2000-01-03,2015-08-13,10095337
+10,11,CBK_X,Commerzbank Ag (CBK_X),daily,2000-01-18,2015-08-13,10095256
+7,95.5,SIE_X,Siemens Ag (SIE_X),daily,2000-01-18,2015-08-13,10095277
+

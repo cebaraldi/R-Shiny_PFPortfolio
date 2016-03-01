@@ -1,0 +1,8 @@
+name: PFStocks
+account: cebaraldi
+server: shinyapps.io
+bundleId: 240376
+url: https://cebaraldi.shinyapps.io/PFStocks
+when: 1439634133.63085
+asMultiple: FALSE
+asStatic: FALSE

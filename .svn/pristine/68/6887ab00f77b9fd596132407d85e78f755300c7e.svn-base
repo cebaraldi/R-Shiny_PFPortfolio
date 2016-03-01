@@ -1,0 +1,66 @@
+# Portfolio of Stocks
+# Two file apps: server.R
+if (!require("shiny")) install.packages('shiny')
+if (!require("httr")) install.packages('httr')
+if (!require("XML")) install.packages('XML')
+if (!require("DT")) install.packages('DT')
+print(sessionInfo())
+
+# load libraries, scripts, data
+
+# Define certicificate file
+cafile <- system.file("CurlSSL", "cacert.pem", package = "RCurl")
+# Read page
+page <- GET(
+  "https://www.quandl.com/",
+  path = "api/v2/datasets.xml",
+  query = "*&source_code=FSE&per_page=300&page=1&auth_token=hDUA4xzpnCvZwFygscUf",
+  config(cainfo = cafile)
+)
+#if(page$status_code==200)cat("I: Successful HTTP request.\n")
+
+# XML type data
+doc <- xmlTreeParse(page)
+r <- xmlRoot(doc)
+nodes <- r[["docs"]] # FSE had 160 indices on 06/08/2015 (in Quandl)
+id <- as.integer(sapply(getNodeSet(nodes,"//id[@type='integer']"),xmlValue))
+code <- sapply(getNodeSet(nodes,"//code"),xmlValue)
+name <- sapply(getNodeSet(nodes,"//name"),xmlValue)
+freq <- unlist(sapply(getNodeSet(nodes,"//frequency"),xmlValue))
+from <- unlist(sapply(getNodeSet(nodes,"//from-date"),xmlValue))
+to <- unlist(sapply(getNodeSet(nodes,"//to-date"),xmlValue))
+sx <- sapply(getNodeSet(r[["sources"]],"//name"),xmlValue)
+sorted <- order(code)
+METADATA <- data.frame(code[sorted],name[sorted],freq[sorted],from[sorted],to[sorted],id[sorted])
+METADATA<-cbind(integer(nrow(METADATA)),METADATA)
+names(METADATA) <- c("#","Code","Frequency","Name","From","To","ID")
+rm(cafile,page,doc,r,nodes)#,id,code,name,freq,from,to,sx,sorted)
+#print(ls())
+
+#library(Quandl)
+#source(file.path("..", "Quandl.auth.R"))
+#fsecol <- "Close"
+#if(!exists("ADIDAS"))ADIDAS = Quandl("FSE/ADS_X",type="zoo")[,fsecol]
+#if(!exists("BASF"))BASF = Quandl("FSE/BAS_X",type="zoo")[,fsecol]
+#if(!exists("COMMERZBANK"))COMMERZBANK = Quandl("FSE/CBK_X",type="zoo")[,fsecol]
+#if(!exists("BMW"))BMW = Quandl("FSE/BMW_X",type="zoo")[,fsecol]
+#if(!exists("SIEMENS"))SIEMENS = Quandl("FSE/SIE_X",type="zoo")[,fsecol]
+# Merge to one zoo object
+#FSE <- merge(BMW,SIEMENS)
+
+shinyServer(function(input, output) {
+  
+  output$fse <- renderText({sx}) # name of the stock exchange 
+  output$x3 <- DT::renderDataTable(METADATA, server=TRUE)
+  
+  observeEvent(input$go, {
+    output$x4 <- renderPrint({
+      s = input$x3_rows_selected
+      if(length(s)){
+        cat("These rows were selected:\n\n")
+        cat(s, sep=", ")
+      }
+    })
+  })     
+  
+})

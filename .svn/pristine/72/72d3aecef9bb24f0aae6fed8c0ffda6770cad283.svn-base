@@ -1,0 +1,119 @@
+# Portfolio of Stocks
+# Two file apps: server.R
+if (!require("shiny")) install.packages('shiny')
+if (!require("DT")) install.packages('DT')
+if (!require("httr")) install.packages('httr')
+if (!require("XML")) install.packages('XML')
+if (!require("Quandl")) install.packages('Quandl')
+Quandl.auth("hDUA4xzpnCvZwFygscUf")
+#print(sessionInfo())
+
+# load libraries, scripts, data
+
+# Define certicificate file
+cafile <- system.file("CurlSSL", "cacert.pem", package = "RCurl")
+# Read page
+page <- GET(
+  "https://www.quandl.com/",
+  path = "api/v2/datasets.xml",
+  query = "*&source_code=FSE&per_page=300&page=1&auth_token=hDUA4xzpnCvZwFygscUf",
+  config(cainfo = cafile)
+)
+#if(page$status_code==200)cat("I: Successful HTTP request.\n")
+
+# XML type data
+doc <- xmlTreeParse(page)
+r <- xmlRoot(doc)
+nodes <- r[["docs"]] # FSE had 160 indices on 06/08/2015 (in Quandl)
+id <- as.integer(sapply(getNodeSet(nodes,"//id[@type='integer']"),xmlValue))
+code <- sapply(getNodeSet(nodes,"//code"),xmlValue)
+name <- sapply(getNodeSet(nodes,"//name"),xmlValue)
+freq <- unlist(sapply(getNodeSet(nodes,"//frequency"),xmlValue))
+from <- unlist(sapply(getNodeSet(nodes,"//from-date"),xmlValue))
+to <- unlist(sapply(getNodeSet(nodes,"//to-date"),xmlValue))
+sx <- sapply(getNodeSet(r[["sources"]],"//name"),xmlValue)
+sorted <- order(code)
+METADATA <- data.frame(code[sorted],name[sorted],freq[sorted],from[sorted],to[sorted],id[sorted])
+METADATA<-cbind(integer(nrow(METADATA)),METADATA)
+names(METADATA) <- c("#","Code","Frequency","Name","From","To","ID")
+rm(cafile,page,doc,r,nodes)#,id,code,name,freq,from,to,sx,sorted)
+
+shinyServer(function(input, output, session) {
+  
+  output$fse <- renderText({sx}) # name of the stock exchange 
+  #output$table <- DT::renderDataTable(METADATA,server=T,rownames=FALSE) does not work!
+  output$table <- DT::renderDataTable(METADATA,server=T)
+  observeEvent(input$go, {
+    sel = input$table_rows_selected
+    fsecol <- "Close"
+    #if(exists(FSE))rm(FSE)
+    cat("Downloading stock data ...\n")
+    for(i in sel){
+      iname <- code[sorted[as.integer(i)]]
+      xcode <- paste("FSE",iname,sep="/")
+      cat(xcode,"\n")
+      if(!exists("FSE")){
+        FSE = Quandl(xcode,type="zoo")[,fsecol,drop=F]
+        attrname <- iname
+      } else {
+        X = Quandl(xcode,type="zoo")[,fsecol]
+        FSE <- merge(FSE,X)
+        attrname <- c(attrname, iname)
+      }
+    }
+    colnames(FSE) <- attrname
+    
+    # Select range of dates of interest (merge to keep class property)
+    FSE <- merge(window(FSE,start=input$dates[1],end=input$dates[2]),drop=F)
+    colnames(FSE) <- attrname
+    
+    # Compute returns 
+    FSE.ret <- na.omit(diff(log(FSE)))[drop=F]
+    
+    # Plot histogram to assess "normality"...
+    
+    output$selected <- renderPrint({
+      s = input$table_rows_selected
+      if(length(s)){
+        cat("These rows were selected:\n")
+        cat(s, sep=", ")
+      }
+    })
+    output$session <- renderText({
+      #print(names(session$clientData))
+      paste(sep = "",
+            "protocol: ", session$clientData$url_protocol, "\n",
+            "hostname: ", session$clientData$url_hostname, "\n",
+            "pathname: ", session$clientData$url_pathname, "\n",
+            "port: ",     session$clientData$url_port,     "\n",
+            "search: ",   session$clientData$url_search,   "\n"
+      )    })
+    output$stats <- renderPrint({
+      muhat <- apply(FSE.ret,2,mean) 
+      Sigmahat <- var(FSE.ret)
+      cat("Summary Statistics:\n")
+      print(summary(FSE.ret))
+      cat("Variance:\n")
+      print(Sigmahat)
+    })
+    
+    
+#     datasetInput <- reactive({
+#       switch(input$dataset,
+#              "rock" = rock,
+#              "pressure" = pressure,
+#              "cars" = cars)
+#     })
+#     output$table <- renderTable({
+#       datasetInput()
+#     })    
+#     output$downloadData <- downloadHandler(
+#       filename = function() { paste(input$FSE.ret, '.csv', sep='') },
+#       content = function(file) {
+#         write.csv(datasetInput(), file)
+#       }
+#     )    
+    
+  })     
+  
+})
